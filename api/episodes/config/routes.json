@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/episodes",
+      "handler": "episodes.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/episodes/count",
+      "handler": "episodes.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/episodes/:id",
+      "handler": "episodes.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/episodes",
+      "handler": "episodes.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/episodes/:id",
+      "handler": "episodes.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/episodes/:id",
+      "handler": "episodes.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
